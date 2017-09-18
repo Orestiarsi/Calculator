@@ -5,7 +5,8 @@ let clear = document.getElementById("clear");
 let operators = document.getElementsByClassName("operators");
 let firstEntry = [];
 let equals = document.getElementById("equals");
-let secondEntry = {};
+// let secondEntry = {};
+
 clear.addEventListener("click", function clearAll (){
   location.reload();
 });
@@ -22,6 +23,8 @@ for (var i = 0; i < operators.length; i++) {
     firstEntry.push(displayArray.join(""));
     displayArray.push(event.target.value);
     box.value = displayArray.join("");
+    //create secondEntry array and push everything in once = is clicked
+    
 }
     equals.addEventListener("click", displayEquals);
 function displayEquals(){

@@ -1,9 +1,13 @@
+body {
+ padding-left: 40%;
+ padding-top: 10%;
+}
+
 .main_container {
   background-color: green;
   width: 300px;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 #equals, .operators, .num, .calc_c-ans, .calc_7-9,
@@ -20,10 +24,12 @@
 input {
   width: 200px;
   height: 45px;
+  font-size: 30px;
 }
 #clear {
   flex: 1;
 }
 #box {
+  align-self: center;
   flex: 3;
 }
